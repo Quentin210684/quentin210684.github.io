@@ -1,0 +1,218 @@
+body{
+    background-image: linear-gradient(112.5deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%,rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(157.5deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%,rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(135deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%,rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(90deg, rgb(195, 195, 195),rgb(228, 228, 228)); background-blend-mode:overlay,overlay,overlay,normal;
+}
+
+#image{
+    width: 144em;
+    height: 1095px
+}
+
+/*Général*/
+/*scroll-behavior: smooth; permet d'avoir un défilement plus doux*/
+html{
+    scroll-behavior: smooth;
+}
+
+/*
+*Je sélectionne l'id picture et je lui donne une largeur.
+*En réglant la largeur avec width la hauteur s'ajustera en même temps.
+*Le border-radius: 5%; crée un cercle autour de la photo, réglage en %.
+*/
+#picture{
+    width: 249px;
+    border-radius: 5%;
+}
+
+
+section{
+    padding: 20px;
+    padding-top: 111px;
+}
+
+h2{
+    color: black;
+    font-variant: small-caps;
+    margin-right: 25px;
+    
+}
+
+/* display:inline met les titres qui étaient les uns en dessous des autres en ligne (les uns à côté des autres)*/
+
+#navbar li{
+    list-style: none;
+    display: inline;
+    margin-right: 90px;
+    z-index: 99;
+    
+}
+/* font-size permet de regler la taille de la police*/
+#navbar{
+    font-size: 26px;
+    height: 95px;
+    margin-bottom: 0;
+    position: sticky;
+    top: 0px;
+    opacity: 0.8;   
+}
+/*text decoration: none supprime la ligne en dessous le "nom" dans la barre de navigation*/
+#navbar a{
+    color:black;
+    text-decoration: none;
+    margin-left: 20px;
+    
+}
+
+/*A propos*/
+
+#profil{
+    text-align: center;
+    font-size: 27px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+img{
+    width: 230px;
+    
+}
+
+#name{
+    font-size: 70px;
+}
+
+h1{
+    font-size: 25px;
+    animation-duration: 2s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+/*Introduction*/
+
+/*text-align: center; centre le tout*/
+#introduction{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("../img/wp4974476-front-end-wallpapers.png");
+    background-size: cover;   
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center; 
+    font-size: 1rem;
+    height: 63em;
+}
+
+
+
+
+#Accueil{
+    
+    height: 38em;
+
+}
+
+#center{
+    margin-top: 250px;
+    font-size: 4.5rem;
+}
+
+#title{
+    font-family: 'Birthstone', cursive;
+    font-weight: lighter;
+    text-align: center;
+    margin: 0px;
+    
+}
+
+#introduction a{
+    color: black;
+    font-style: normal;
+}
+
+#underTitle{
+    text-align: center;
+    font-size: 30px;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+    
+}
+
+/*Le padding-left: 0; permet de repousser les marges intérieur, supprime le décalage des puces */
+#introduction ul{
+    padding-left: 0;
+    font-size: 22px ;
+}
+
+/*list-style: none; supprime les puces de l'introduction*/
+#introduction li{
+    list-style: none;
+}
+
+/* Education*/
+/*Le "a" de rgba sert à doser l'opacité*/
+
+
+.educationItem, .experienceItem{
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    
+}
+
+/*le font-weight: bold va selectionner la premiere ligne la class et la mettre en gras*/
+.itemTitle{
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+/*Compétence*/
+
+#skills li{
+    list-style: none;
+    
+}
+
+.size{
+    font-size: 19px;
+}
+
+.progress{
+    display: flex;
+    height: 25px;
+    overflow: hidden;
+    font-size: 18px;
+    border-radius: .25rem;
+}
+
+
+  
+ 
