@@ -1,6 +1,7 @@
 body{
-    background-color: #f9f9f9;
+    background-color: grey;
 }
+    
 
 #image{
     width: 144em;
@@ -27,14 +28,18 @@ html{
 section{
     padding: 20px;
     padding-top: 111px;
+    
 }
 
 h2{
     color: black;
     font-variant: small-caps;
     margin-right: 25px;
-    
+       
 }
+
+
+
 
 /* display:inline met les titres qui étaient les uns en dessous des autres en ligne (les uns à côté des autres)*/
 
@@ -97,6 +102,8 @@ h1{
     width: 100%;
   }
 }
+
+
 
 .container{
     display: flex;
@@ -199,6 +206,7 @@ h1{
 #skills li{
     list-style: none;
     
+    
 }
 
 .size{
@@ -211,6 +219,7 @@ h1{
     overflow: hidden;
     font-size: 18px;
     border-radius: .25rem;
+    
 }
 
 
