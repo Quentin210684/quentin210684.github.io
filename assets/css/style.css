@@ -22,7 +22,7 @@ html {
 */
 
 body {
-    background-color: #f8f9fa;
+    background-color: #e0fbfc;
 }
 
 #picture {
@@ -238,13 +238,8 @@ h1 {
 }
 
 .progress {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     height: 25px;
-    overflow: hidden;
-    font-size: 18px;
-    border-radius: .25rem;
+    font-size: 21px;
 }
 
 

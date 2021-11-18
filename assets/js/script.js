@@ -47,3 +47,22 @@ document.getElementById("button4")
         document.getElementById("m7").hidden = true;
         document.getElementById("m8").hidden = false;
     }, false);
+
+
+function increase() {
+
+    let SPEED = 40;
+    // Retrieve the percentage value
+    let limit = parseInt(document.getElementById("value1").innerHTML, 10);
+    let limit2 = parseInt(document.getElementById("value2").innerHTML, 10);
+
+
+    for (let i = 0; i <= limit; i++) {
+        setTimeout(function() {
+            document.getElementById("value1").innerHTML = i + "%";
+            document.getElementById("value2").innerHTML = i + "%";
+        }, SPEED * i);
+    }
+}
+
+increase();
