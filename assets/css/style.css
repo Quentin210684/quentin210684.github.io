@@ -240,6 +240,12 @@ h1 {
 .progress {
     height: 25px;
     font-size: 21px;
+    background-color: #3d5a80;
+}
+
+.progress-bar {
+    background-color: #98c1d9;
+    color: black;
 }
 
 
