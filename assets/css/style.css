@@ -22,7 +22,7 @@ html {
 */
 
 body {
-    background-color: #e0fbfc;
+    background-color: white;
 }
 
 #picture {
@@ -72,6 +72,12 @@ h2 {
     color: black;
     text-decoration: none;
     margin-left: 20px;
+}
+
+@media screen AND (max-width: 985px) {
+    #navbar a {
+        color: #3d5a80;
+    }
 }
 
 
