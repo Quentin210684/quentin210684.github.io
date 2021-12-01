@@ -78,6 +78,7 @@ h2 {
     color: black;
     text-decoration: none;
     margin-left: 20px;
+    font-size: 40px;
 }
 
 @media screen AND (max-width: 985px) {
