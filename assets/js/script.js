@@ -104,5 +104,5 @@ buttonCLose4.onclick = () => {
 let buttonAle = document.getElementById('cv');
 
 buttonAle.onclick = () => {
-    alert('Attention le formulaire et le téléchargement de mon CV ne sont pas encore disponible. Merci de votre compréhension.');
+    alert('Fonctionnalitée indisponible pour le moment.');
 }
