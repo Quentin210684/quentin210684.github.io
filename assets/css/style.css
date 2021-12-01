@@ -82,7 +82,8 @@ h2 {
 
 @media screen AND (max-width: 985px) {
     #navbar a {
-        color: #3d5a80;
+        color: black;
+        background-color: #98c1d9;
     }
 }
 
@@ -247,6 +248,10 @@ h1 {
 
 .size {
     font-size: 30px;
+}
+
+.size2 {
+    font-size: 24px;
 }
 
 .progress {
