@@ -45,6 +45,7 @@ h2 {
     font-variant: small-caps;
     padding: 30px;
     background-color: #98c1d9;
+    font-size: 42px;
 }
 
 
@@ -226,7 +227,7 @@ h1 {
 .experienceItem {
     padding: 10px;
     margin-bottom: 5px;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 
@@ -234,7 +235,7 @@ h1 {
 
 .itemTitle {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 
@@ -245,7 +246,7 @@ h1 {
 }
 
 .size {
-    font-size: 19px;
+    font-size: 30px;
 }
 
 .progress {
@@ -315,8 +316,9 @@ input[type=submit]:hover {
     border-radius: 5px;
     padding: 20px;
     width: 100%;
-    max-width: 440px;
+    max-width: 680px;
     margin: 0 auto;
+    font-size: 26px;
 }
 
 
