@@ -100,20 +100,9 @@ buttonCLose4.onclick = () => {
 
 
 
-function increase() {
 
-    let SPEED = 40;
-    // Retrieve the percentage value
-    let limit = parseInt(document.getElementById("value1").innerHTML, 10);
-    let limit2 = parseInt(document.getElementById("value2").innerHTML, 10);
+let buttonAle = document.getElementById('cv');
 
-
-    for (let i = 0; i <= limit; i++) {
-        setTimeout(function() {
-            document.getElementById("value1").innerHTML = i + "%";
-            document.getElementById("value2").innerHTML = i + "%";
-        }, SPEED * i);
-    }
+buttonAle.onclick = () => {
+    alert('Attention le formulaire et le téléchargement de mon CV ne sont pas encore disponible. Merci de votre compréhension.');
 }
-
-increase();
