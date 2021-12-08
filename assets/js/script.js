@@ -104,5 +104,5 @@ buttonCLose4.onclick = () => {
 let buttonAle = document.getElementById('cv');
 
 buttonAle.onclick = () => {
-    alert('Fonctionnalitée indisponible pour le moment.');
+    alert('Fonctionnalité indisponible pour le moment.');
 }
