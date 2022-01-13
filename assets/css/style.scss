@@ -1,11 +1,10 @@
+@charset "UTF-8";
 #image {
     width: 144em;
-    height: 1095px
+    height: 1095px;
 }
 
-
 /*Général*/
-
 
 /*scroll-behavior: smooth; permet d'avoir un défilement plus doux*/
 
@@ -13,6 +12,10 @@ html {
     scroll-behavior: smooth;
 }
 
+#img {
+    width: 303px;
+    border-radius: 10px;
+}
 
 /*
 *Je sélectionne l'id picture et je lui donne une largeur.
@@ -21,7 +24,7 @@ html {
 */
 
 body {
-    background-color: #e0fbfc;
+    background-color: white;
 }
 
 #picture {
@@ -39,8 +42,8 @@ h2 {
     font-variant: small-caps;
     padding: 30px;
     background-color: #98c1d9;
+    font-size: 42px;
 }
-
 
 /* display:inline met les titres qui étaient les uns en dessous des autres en ligne (les uns à côté des autres)*/
 
@@ -51,18 +54,17 @@ h2 {
     z-index: 99;
 }
 
-
 /* font-size permet de regler la taille de la police*/
 
 #navbar {
     font-size: 26px;
     height: 95px;
     margin-bottom: 0;
+    position: -webkit-sticky;
     position: sticky;
     top: 0px;
     opacity: 0.8;
 }
-
 
 /*text decoration: none supprime la ligne en dessous le "nom" dans la barre de navigation*/
 
@@ -70,8 +72,15 @@ h2 {
     color: black;
     text-decoration: none;
     margin-left: 20px;
+    font-size: 40px;
 }
 
+@media screen AND (max-width: 985px) {
+    #navbar a {
+        color: black;
+        background-color: #98c1d9;
+    }
+}
 
 /*A propos*/
 
@@ -82,14 +91,31 @@ h2 {
     padding-bottom: 50px;
 }
 
+img {
+    width: 230px;
+}
+
 #name {
-    font-size: 80px;
+    font-size: 100px;
 }
 
 h1 {
     font-size: 25px;
+    -webkit-animation-duration: 2s;
     animation-duration: 2s;
+    -webkit-animation-name: slidein;
     animation-name: slidein;
+}
+
+@-webkit-keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
 }
 
 @keyframes slidein {
@@ -104,19 +130,25 @@ h1 {
 }
 
 .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
+#linkedin {
+    font-size: 45px;
+}
 
 /*Introduction*/
-
 
 /*text-align: center; centre le tout*/
 
 #introduction {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     background-image: url("../img/wp4974476-front-end-wallpapers.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -136,7 +168,7 @@ h1 {
 }
 
 #title {
-    font-family: 'Birthstone', cursive;
+    font-family: "Birthstone", cursive;
     font-weight: lighter;
     text-align: center;
     margin: 0px;
@@ -150,7 +182,9 @@ h1 {
 #underTitle {
     text-align: center;
     font-size: 30px;
+    -webkit-animation-duration: 3s;
     animation-duration: 3s;
+    -webkit-animation-name: slidein;
     animation-name: slidein;
 }
 
@@ -165,15 +199,12 @@ h1 {
     }
 }
 
-
 /*Le padding-left: 0; permet de repousser les marges intérieur, supprime le décalage des puces */
 
 #introduction ul {
     padding-left: 0;
     font-size: 22px;
-    background-color: #98c1d9;
 }
-
 
 /*list-style: none; supprime les puces de l'introduction*/
 
@@ -181,9 +212,7 @@ h1 {
     list-style: none;
 }
 
-
 /* Education*/
-
 
 /*Le "a" de rgba sert à doser l'opacité*/
 
@@ -191,17 +220,15 @@ h1 {
 .experienceItem {
     padding: 10px;
     margin-bottom: 5px;
-    font-size: 18px;
+    font-size: 24px;
 }
-
 
 /*le font-weight: bold va selectionner la premiere ligne la class et la mettre en gras*/
 
 .itemTitle {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;
 }
-
 
 /*Compétence*/
 
@@ -210,13 +237,87 @@ h1 {
 }
 
 .size {
-    font-size: 19px;
+    font-size: 25px;
+}
+
+.size2 {
+    font-size: 24px;
+}
+
+#portFolio {
+    font-size: 40px;
 }
 
 .progress {
-    display: flex;
-    height: 25px;
-    overflow: hidden;
-    font-size: 18px;
-    border-radius: .25rem;
+    height: 45px;
+    font-size: 21px;
+    background-color: #3d5a80;
 }
+
+.progress-bar {
+    background-color: #98c1d9;
+    color: black;
+}
+
+.form {
+    margin-bottom: 10px;
+}
+
+/*--------------------------------------contact-----------------------------*/
+
+.contact {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    font-size: 40px;
+}
+
+.formulCenter {
+    width: 45rem;
+}
+
+input[type="text"],
+textarea,
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-right: 0px;
+    margin-left: 0px;
+    resize: vertical;
+}
+
+label {
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #1255a2;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #1872d9;
+}
+
+.contact2 {
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+    font-size: 26px;
+}
+
+/*# sourceMappingURL=style.css.map */
